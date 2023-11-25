@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body style="background: white">
+    <nav id="desktop-nav">
+      <div class="logo"><span>PORT</span>FOLIO</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><span>PORT</span>FOLIO</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="profilevijay" src="profile-pic.jpg" alt="Vijay Kusekar profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vijay Kusekar</h1>
+        <!-- <p class="section__text__p2">Developer</p> -->
+        <div class="wrapper">
+        <ul class="dynamic-txts">
+          <li><span style="color: rgb(85, 85, 85);">Engineer</span></li>
+          <li><span style="color: rgb(85, 85, 85);">Designer</span></li>
+          <li><span style="color: rgb(85, 85, 85);">Coder</span></li>
+          <li><span style="color: rgb(85, 85, 85);">Developer</span></li>
+        </ul>
+    </div>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+          <a><button class="btn btn-color-1" onclick="window.open('Vijay_Kusekar.pdf','_blank')">
+            Resume
+          </button></a>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/vijay-digambar-kusekar-682235259" target="window2">
+            <i class="fa-brands fa-linkedin" style="color: blue;"></i>
+        </a>
+        <a href="https://github.com/Vijay-2003" target="window2">
+            <i class="fa-brands fa-github" style="color: #00060f;"></i>
+        </a>
+        <a href="https://instagram.com/vijay_kusekar?igshid=MzNINGNkZWQ4Mg==" target="window2">
+            <i class="fa-brands fa-instagram" style="color: #c91891;"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100069505254213" target="window2">
+            <i class="fa-brands fa-facebook" style="color: #0962fb;"></i>
+        </a>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="about-pic.png"
+            alt="info picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Coding since<br />2+ years</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Currently Pursuing<br />Btech in CSE</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+             Engaging College student with 2+ years of coding experience at Nutan College of Engineering & Research (NCER) Talegaon, Dabhade. I am Currently living in Maharashtra(India) - Pimprigaon pune-17. I have great problem solving skills and i am familiar with Many Programming Languages like Python, C, C++, JAVA, Web Development Languages,etc.My dream is to become a Software Developer. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <hr style="margin-top: 1rem;">
+
+  <div class="imgbody">
+    <div class="imgcontainer">
+      <div class="slide-container">
+        <div class="slide-image">
+          <img id="imgslide" src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://camo.githubusercontent.com/5734d0669fe22ce04a1cb989a156cd32c379875f6bca56d5210c9432824856d9/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f7461696c77696e646373732f7461696c77696e646373732d69636f6e2e737667" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://miro.medium.com/v2/resize:fit:680/1*7G9vb_q5MA8_C_8HtwMfqw.png" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://images.ctfassets.net/23aumh6u8s0i/c04wENP3FnbevwdWzrePs/1e2739fa6d0aa5192cf89599e009da4e/nextjs" alt="">
+        </div>
+        <div class="slide-image">
+          <img id="imgslide" src="https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+    <!-- <section>
+      <div class="imgslider">
+      </div>
+    </section>
+    <hr> -->
+    <br>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container" style="box-shadow: 0px 0px 20px black;">
+            <h2 class="experience-sub-title"></h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS/Sass</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ReactJS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NodeJS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ExpressJS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="details-container"> -->
+            <!-- <h2 class="experience-sub-title"></h2> -->
+            <!-- <div class="article-container"> -->
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NOSQL/SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <hr>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://th.bing.com/th/id/OIP._phBcjGYP1ivyBNaowEjXwHaEH?w=296&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Random Info Finder/Generator</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Vijay-2003/Random-Info-Finder-Generator'"
+              >
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://vijay-2003.github.io/Random-Info-Finder-Generator/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://th.bing.com/th/id/OIP._phBcjGYP1ivyBNaowEjXwHaEH?w=296&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Airbnb</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Vijay-2003/airbnb'"
+              >
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://room-rent.vercel.app/'">
+                Live Demo
+              </button>
+
+            </div>
+          </div>
+          <div class="details-container color-container backchange">
+            <div class="article-container">
+              <img
+                src="https://th.bing.com/th/id/OIP._phBcjGYP1ivyBNaowEjXwHaEH?w=296&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title changetxt">All Projects</h2>
+            <div class="btn-container ">
+              <button
+                class="btn btn-color-2 project-btn btnchange" 
+                onclick="location.href='https://github.com/Vijay-2003'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <hr>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+            style="background-color: white;"
+          />
+            <p><a href="">vijay.kusekar2003@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            style="background-color: white;"
+            src="linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/vijay-digambar-kusekar-682235259" target="window2">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="con">
+        <div id="forms">
+            <form id="formmain">
+              <input id="name" type="text" placeholder="Your Name..." />
+              <input id="email" type="email" placeholder="Your email..." />
+              <textarea id="message" rows="4" cols="4" placeholder="Write your message here..."></textarea>
+            </form>
+        </div>
+    </section> -->
+    <hr>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links" style="font-weight: bold;">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Vijay Kusekar. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/6a7fb8c661.js" crossorigin="anonymous"></script>
+  </body>
+</html>

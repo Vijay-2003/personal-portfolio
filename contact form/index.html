@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="sendmail(); reset(); return false;">
+        <input type="text" placeholder="Your Name" id="name" required>
+        <input type="number" placeholder="Your phone no" id="number" required>
+        <input type="email" placeholder="your email" id="email" required>
+        <textarea placeholder="your complain or enquiry" rows="5" cols="7" id="msg"></textarea>
+        <button type="submit" id="btn">Send</button>
+    </form>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "vijay.kusekar2003@gmail.com",
+                Password : "5F6ADB22E71AE6BF5FDA4964D7F290AEDBB0",
+                To : "vijay.kusekar2003@gmail.com",
+                From : document.getElementById("email").value,
+                Subject : "New Enquiry",
+                Body : "And this is body"
+            })
+            .then((message) => alert(message))
+
+        }
+        // 5F6ADB22E71AE6BF5FDA4964D7F290AEDBB0  smtp.elasticemail.com  2525
+
+    </script>
+</body>
+</html>
